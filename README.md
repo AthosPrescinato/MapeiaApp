@@ -3,7 +3,7 @@
 
 # Pré-Requisitos
 * Android Studio 3.5.2
-* API 16
+* Android SDK 4.1 - API 16
 * Kotlin
 
 # Metodos Aplicados
