@@ -58,14 +58,15 @@ class MainActivity : AppCompatActivity() {
 
             cursor.moveToNext()
 
-            findViewById<ListView>(R.id.listView).adapter = CustomAdapter(this@MainActivity, dataList)
+            findViewById<ListView>(R.id.listView).adapter =
+                CustomAdapter(this@MainActivity, dataList)
             findViewById<ListView>(R.id.listView).setOnItemClickListener { _, _, position, _ ->
 
                 val builder = AlertDialog.Builder(this)
                 with(builder) {
                     setTitle("Deletar")
                     setMessage("Você têm certeza que deseja deletar?")
-                    setPositiveButton("DELETE",{dialogInterface, which ->
+                    setPositiveButton("DELETE", { dialogInterface, which ->
                         var idPosition = dataList[position]["id"]
                         dbHandler.deleteRow(idPosition.toString())
                         recarregarAdapter()
