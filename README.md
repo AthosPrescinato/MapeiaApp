@@ -1,6 +1,10 @@
 # MapeiaApp
  Aplicativo baseado no site Mapeia.com.br. Com o intuito de mostrar o gasto estimado de viagens com base no KM de distancia, o valor do combustivel e os KM/L que o carro faz.
 
+# Pré-Requisitos
+* Android Studio 3.5.2
+* Android SDK 4.1 - API 16
+* Kotlin
 
 # Metodos Aplicados
 
